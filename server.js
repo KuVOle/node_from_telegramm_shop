@@ -1,3 +1,6 @@
+//для работы на сервере нужно установить пакет pm2
+
+
 const TelegrammBot = require('node-telegram-bot-api');
 require('dotenv').config();
 const express = require('express');
