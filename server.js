@@ -86,4 +86,4 @@ bot.on('message', async (msg) => {
     bot.sendMessage(chatId, 'Received your message');
 });
 
-app.listen(process.env.PORT, 'localhost', () => console.log('server running... PORT = ' + process.env.PORT));
+app.listen(process.env.PORT, () => console.log('server running... PORT = ' + process.env.PORT));
