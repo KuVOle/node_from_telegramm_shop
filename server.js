@@ -26,7 +26,9 @@ app.post('/web-data', async (req, res) => {
             input_message_content: {
                 message_text: `Поздравляем с успешной покупкой. Вы приобрели товар на сумму: ${totalPrice}`,
             }
+
         });
+        return res.status(200).json({});
 
     } catch (e) {
         await bot.answerWebAppQuery(queryId, {
@@ -39,7 +41,7 @@ app.post('/web-data', async (req, res) => {
         })
         return res.status(500).json({});
     }
-    return res.status(200).json({});
+
 });
 
 
